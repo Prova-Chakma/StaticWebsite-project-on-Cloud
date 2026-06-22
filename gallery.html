@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | CloudSite AWS</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Progress Bar -->
+    <div id="progressBar"></div>
+
+    <!-- Navbar -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-cloud"></i>
+                CloudSite AWS
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <button id="themeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="page-hero">
+
+        <div class="page-hero-content">
+
+            <h1>Cloud Gallery</h1>
+
+            <p>
+                Explore AWS infrastructure, cloud deployment architecture,
+                and project screenshots.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Filter Buttons -->
+
+    <section class="gallery-filter-section">
+
+        <div class="container">
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="aws">
+                    AWS Services
+                </button>
+
+                <button class="filter-btn" data-filter="hosting">
+                    Hosting
+                </button>
+
+                <button class="filter-btn" data-filter="security">
+                    Security
+                </button>
+
+                <button class="filter-btn" data-filter="architecture">
+                    Architecture
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery Grid -->
+
+    <section class="gallery-section">
+
+        <div class="container">
+
+            <div class="gallery-grid">
+
+                <!-- AWS -->
+
+                <div class="gallery-item aws">
+                    <img src="images/aws1.png" alt="AWS Cloud">
+                    <div class="gallery-overlay">
+                        <h3>AWS Cloud Services</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item aws">
+                    <img src="images/aws2.jpg" alt="AWS S3">
+                    <div class="gallery-overlay">
+                        <h3>AWS S3 Storage</h3>
+                    </div>
+                </div>
+
+                <!-- Hosting -->
+
+                <div class="gallery-item hosting">
+                    <img src="images/hosting1.png" alt="Hosting">
+                    <div class="gallery-overlay">
+                        <h3>Static Website Hosting</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item hosting">
+                    <img src="images/hosting2.jpg" alt="Cloud Hosting">
+                    <div class="gallery-overlay">
+                        <h3>Cloud Hosting Infrastructure</h3>
+                    </div>
+                </div>
+
+                <!-- Security -->
+
+                <div class="gallery-item security">
+                    <img src="images/security1.avif" alt="Security">
+                    <div class="gallery-overlay">
+                        <h3>SSL Security</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item security">
+                    <img src="images/security2.png" alt="IAM">
+                    <div class="gallery-overlay">
+                        <h3>AWS IAM Policies</h3>
+                    </div>
+                </div>
+
+                <!-- Architecture -->
+
+                <div class="gallery-item architecture">
+                    <img src="images/arc1.png" alt="Architecture">
+                    <div class="gallery-overlay">
+                        <h3>Cloud Architecture</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item architecture">
+                    <img src="images/arc2.png" alt="CloudFront">
+                    <div class="gallery-overlay">
+                        <h3>CloudFront CDN</h3>
+                    </div>
+                </div>
+
+                <!-- Extra Images -->
+
+                <div class="gallery-item aws">
+                    <img src="images/aws3.png" alt="AWS Dashboard">
+                    <div class="gallery-overlay">
+                        <h3>AWS Management Console</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item hosting">
+                    <img src="images/hosting3.png" alt="Deployment">
+                    <div class="gallery-overlay">
+                        <h3>Website Deployment</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item security">
+                    <img src="images/security3.png" alt="Encryption">
+                    <div class="gallery-overlay">
+                        <h3>HTTPS Encryption</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item architecture">
+                    <img src="images/arc3.png" alt="Route53">
+                    <div class="gallery-overlay">
+                        <h3>Route 53 DNS Management</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Cloud Architecture Showcase -->
+
+    <section class="architecture-showcase">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>AWS Deployment Architecture</h2>
+
+                <p>
+                    High availability cloud architecture using AWS services.
+                </p>
+
+            </div>
+
+            <div class="architecture-card">
+
+                <div class="architecture-step">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h3>User Browser</h3>
+                </div>
+
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="architecture-step">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Route 53</h3>
+                </div>
+
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="architecture-step">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>CloudFront</h3>
+                </div>
+
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="architecture-step">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>AWS S3</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+
+    <section class="stats">
+
+        <div class="section-title">
+            <h2>Cloud Performance Metrics</h2>
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h3 class="counter" data-target="99">0</h3>
+                <span>% Availability</span>
+            </div>
+
+            <div class="stat-card">
+                <h3 class="counter" data-target="300">0</h3>
+                <span>CloudFront Edge Locations</span>
+            </div>
+
+            <div class="stat-card">
+                <h3 class="counter" data-target="150">0</h3>
+                <span>Countries Served</span>
+            </div>
+
+            <div class="stat-card">
+                <h3 class="counter" data-target="1000">0</h3>
+                <span>Successful Deployments</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <h2>
+                Ready To Build On AWS?
+            </h2>
+
+            <p>
+                Deploy secure and scalable websites using modern cloud technologies.
+            </p>
+
+            <a href="contact.html" class="btn primary-btn">
+                Start Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3>CloudSite AWS</h3>
+
+                <p>
+                    Modern AWS cloud hosting and deployment solutions.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CloudSite AWS. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Back To Top -->
+
+    <button id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
